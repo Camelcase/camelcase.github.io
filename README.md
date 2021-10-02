@@ -1,2 +1,2 @@
 # camelcase.github.io
-intfo page
+info page
