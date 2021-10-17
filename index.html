@@ -11,7 +11,7 @@
   </head>
   <body>
      
-<main class="de">
+<main class="de" id="main">
     <header>
       <a id="home"></a>
       <div class="px-3 py-2 bg-dark text-white">
@@ -43,12 +43,12 @@
                 </a>
               </li>
               <li>
-                <a href="#de" class="en nav-link text-white">
+                <a href="#de" onclick="switchlang('de');retrun false;" class="en nav-link text-white">
                   de
                 </a>
               </li>
               <li>
-                <a href="#en" class="de nav-link text-white">
+                <a href="#en" onclick="switchlang('en');retrun false;" class="de nav-link text-white">
                   en
                 </a>
               </li>
@@ -85,7 +85,7 @@
             <p class="lead">Freelance Full stack Software Developer with Focus on Backend problems.
     
             </p>
-            <p>I can help you with Conception, Planing and implemention of software projects of (almost) all kinds.
+            <p>I can help you with Conception, Planing and implemention of (almost) all sorts of software projects.
     
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
@@ -251,10 +251,15 @@
     <div class="b-example-divider mb-0"></div>
   </main>
   
-
-
     <script src="https://kit.fontawesome.com/569bf76e93.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function switchlang(lang){
+            var element = document. getElementById('main');
+            element.classList.remove('en').remove('de');
+            element.classList.add(lang);
+        }        
+    </script>
  
   </body>
 </html>
