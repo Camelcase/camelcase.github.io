@@ -41,3 +41,11 @@ li a{
     text-decoration: none;
     color: black;   
 }
+
+main.de .en{
+	display: none;
+}
+
+main.en .de{
+	display: none;
+}
